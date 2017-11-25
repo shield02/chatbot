@@ -18,3 +18,4 @@ Route::get('/conversation', function () {
     return view('conversation');
 });
 Route::get('/conversation/dateres', 'Conversation@date');
+Route::get('/conversation/govres', 'Conversation@governors');
