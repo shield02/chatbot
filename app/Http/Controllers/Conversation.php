@@ -20,4 +20,12 @@ class Conversation extends Controller
             ]
         ]);
     }
+
+    public function governors() {
+        return response()->json([
+            "messages" =>  [
+                ["text" => "Akwa Ibom state governor is Udom Emmanuel"],
+            ]
+        ]);
+    }
 }
