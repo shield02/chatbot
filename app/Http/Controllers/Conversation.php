@@ -25,6 +25,8 @@ class Conversation extends Controller
         return response()->json([
             "messages" =>  [
                 ["text" => "Akwa Ibom state governor is Udom Emmanuel"],
+                ["text" => "Cross River state governor is Ben Ayade"],
+                ["text" => "Rivers state governor is Wisom Imoke"],
             ]
         ]);
     }
