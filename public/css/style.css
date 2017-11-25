@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.reset {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-rows: 1fr 75px;
+    grid-template-columns: 75px 1fr;
+    grid-template-areas: "list chat" "list info";
+    background-color: blueviolet;
+    height: 100vh;
+    margin: 0;
+}
+.container h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+.list {
+    grid-area: list;
+    background-color: red;
+}
+.list.persons {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+.persons li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: .5em;
+    margin: .5em;
+    background: cyan;
+}
+.chat {
+    grid-area: chat;
+    background-color: #fff;
+}
+.caption {
+    display: grid;
+    background: black;
+}
+.info {
+    grid-area: info;
+    background-color: green;
+}
