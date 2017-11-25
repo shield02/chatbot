@@ -14,8 +14,9 @@ class Conversation extends Controller
 
     public function date() {
         return response()->json([
-            'message' => [
-                ['text' => "Today's date is "],
+            "messages" => [
+                ["text" => "Today's date is ..."],
+                ["text" => "Yesterday"]
             ]
         ]);
     }
