@@ -21,9 +21,9 @@ class Conversation extends Controller
         ]);
     }
 
-    public function governors(Request $gov) {
+    public function governors(Request $request) {
 
-        switch ($gov) {
+        switch ($request) {
             case "Akwa Ibom": return response()->json([
                  "messages" => [ ["text" => "Akwa Ibom state governor is Udom Emmanuel."], ] ]); 
             break;
