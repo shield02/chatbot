@@ -12,9 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/conversation', function () {
     return view('conversation');
 });
 Route::get('/conversation/dateres', 'Conversation@date');
