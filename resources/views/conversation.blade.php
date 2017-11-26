@@ -21,21 +21,6 @@
                 <li>chat 5</li>
                 <li>chat 6</li>
                 <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
-                <li>chat 6</li>
             </ul>
         </aside>
         <section class="chat reset">
@@ -45,7 +30,13 @@
             </div>
         </section>
         <footer class="info reset">
-
+            <figure class="reset">
+                <img src="{{ asset('img/chatfuel90x50.png') }}" alt="chatfuel logo" width=90 height=50>
+            </figure>
+            <div class="tagline">
+                <h3>Chatbotdev</h3>
+                <p>A simple chatbot from chatfuel<p>
+            </div>
         </footer>
     </div>
 </body>
