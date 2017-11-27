@@ -27,7 +27,7 @@ class Conversation extends Controller
         foreach ($query as $key => $state) {
 
        
-            switch ($key) {
+            switch (strtolower($key)) {
                 case "abia": return response()->json([
                     "messages" => [ ["text" => "Abia state governor is Okezie Ikpeazu."], ] ]); 
                 break;
