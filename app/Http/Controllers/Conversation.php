@@ -24,17 +24,18 @@ class Conversation extends Controller
     public function governors(Request $request) {
 
         $query = $request->query();
-        foreach ($query as $key => $state) {
+        foreach ($query as $key => $value) {
 
-       
-            switch (strtolower($key)) {
+            $state = strtolower($key);            
+
+            switch ($state) {
                 case "abia": return response()->json([
                     "messages" => [ ["text" => "Abia state governor is Okezie Ikpeazu."], ] ]); 
                 break;
                 case "adamawa": return response()->json([
                     "messages" => [ ["text" => "Adamawa state governor is Bindo Jibrilla."], ] ]); 
                 break;
-                case "Akwa Ibom": return response()->json([
+                case "akwa ibom": return response()->json([
                     "messages" => [ ["text" => "Akwa Ibom state governor is Udom Emmanuel."], ] ]); 
                 break;
                 case "anambra": return response()->json([
@@ -52,7 +53,7 @@ class Conversation extends Controller
                 case "borno": return response()->json([
                     "messages" => [ ["text" => "Borno state governor is Kashim Shettima."], ] ]); 
                 break;            
-                case "Cross River": return response()->json([ 
+                case "cross river": return response()->json([ 
                     "messages" => [ ["text" => "Cross River state governor is Benedict Ayade"], ] ]);
                 break;
                 case "delta": return response()->json([
@@ -137,7 +138,7 @@ class Conversation extends Controller
                     "messages" => [ ["text" => "Zamfara state governor is Abdul-Aziz Yari Abubakar."], ] ]); 
                 break;
                 case "abuja": return response()->json([
-                    "messages" => [ ["text" => "The federal capital minister Mohammed Bello."], ] ]); 
+                    "messages" => [ ["text" => "The federal capital minister is Mohammed Bello."], ] ]); 
                 break;
                 default: return response()->json([ "messages" => ["text" => "Which state do you hail from?"] ]);
             }
