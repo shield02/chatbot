@@ -35,7 +35,7 @@ class Conversation extends Controller
                 case "adamawa": return response()->json([
                     "messages" => [ ["text" => "Adamawa state governor is Bindo Jibrilla."], ] ]); 
                 break;
-                case "akwa ibom": return response()->json([
+                case "akwa-ibom": return response()->json([
                     "messages" => [ ["text" => "Akwa Ibom state governor is Udom Emmanuel."], ] ]); 
                 break;
                 case "anambra": return response()->json([
@@ -53,7 +53,7 @@ class Conversation extends Controller
                 case "borno": return response()->json([
                     "messages" => [ ["text" => "Borno state governor is Kashim Shettima."], ] ]); 
                 break;            
-                case "cross river": return response()->json([ 
+                case "cross-river": return response()->json([ 
                     "messages" => [ ["text" => "Cross River state governor is Benedict Ayade"], ] ]);
                 break;
                 case "delta": return response()->json([
