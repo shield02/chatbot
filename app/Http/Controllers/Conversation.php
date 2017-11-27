@@ -23,7 +23,12 @@ class Conversation extends Controller
 
     public function governors(Request $request) {
 
-        switch ($request) {
+        $query = $request->query();
+        foreach ($query as $key => $state) {
+            return $state;
+        }
+
+        switch ($state) {
             case "Abia": return response()->json([
                  "messages" => [ ["text" => "Abia state governor is Okezie Ikpeazu."], ] ]); 
             break;
