@@ -13,8 +13,8 @@
 <body>
     <div class="container reset">
         <div class="caption reset">
-            <h1>Conversation History</h1>
-            <h3>first name, last name</h3>
+            <h1>Chatbotdev Conversation History</h1>
+            <h3>first name last name</h3>
         </div>
         <aside class="list reset">
             <ul class="persons reset">
@@ -29,6 +29,10 @@
         </aside>
         <section class="chat reset">
             <p>This is chat content</p>
+        </section>
+        <section class="sub">
+            <figure class="reset"></figure>
+            <div class="reset">Chatdevbot created with chatfuel</div>
         </section>
         <footer class="info reset">
             <figure class="reset">
