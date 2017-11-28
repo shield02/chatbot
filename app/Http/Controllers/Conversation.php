@@ -13,6 +13,11 @@ class Conversation extends Controller
 
     }
 
+    public function userAttribute(Request $request) { 
+        $userattrib = $request->json()->all();
+        echo $userattrib;
+    }
+
     public function date() {
         return response()->json([
             "messages" => [
