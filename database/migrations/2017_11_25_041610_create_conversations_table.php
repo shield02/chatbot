@@ -15,11 +15,10 @@ class CreateConversationsTable extends Migration
     {
         Schema::create('conversations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('gender');
-            $table->string('profile_pix');
-            $table->string('messenger_uid');
+            $table->integer('chatid');
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('profile_pix')->nullable();
             $table->timestamps();
         });
     }
