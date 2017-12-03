@@ -14,5 +14,6 @@
 Route::get('/', function () {
     return view('conversation');
 });
-Route::get('/conversation/dateres', 'Conversation@date');
-Route::get('/conversation/govres', 'Conversation@governors');
+Route::get('/conversation/dateres', 'ConversationResponse@date');
+Route::get('/conversation/govres', 'ConversationResponse@governors');
+
