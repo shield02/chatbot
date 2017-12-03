@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('/conversation/dateres', 'ConversationResponse@date');
 Route::get('/conversation/govres', 'ConversationResponse@governors');
 
+Route::get('/conversation/userattrib', 'ConversationHistory@userattrib');
